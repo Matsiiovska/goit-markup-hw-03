@@ -8,6 +8,24 @@
     --fill-text-color:#F4F4FD;
     --color-different-style:#4D5AE5;
 }
+/*скидання початкових відступів*/
+h1,h2,h3,h4,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ol,ul{
+margin-top: 0;
+margin-bottom: 0;
+padding-left: 0;
+}
+img{
+    display: block;
+}
+button{
+    cursor: pointer;
+}
+/*----------------------------------------------*/
+
 .list{
     list-style: none;
 }
@@ -19,6 +37,87 @@ body{
 font-family: var(--main-font);
 font-weight: 400;
 color:var(--contact-color);
+}
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.page-header-container{
+    display: flex; 
+    align-items: center;  
+    justify-content: space-between;
+}
+.page-nav{
+    display: flex;
+    align-items: center;
+
+}
+.menu{
+    display: flex;
+}
+.addr{
+    display: flex;
+}
+.menu-item:not(:last-child){
+    margin-right: 40px;
+}
+.page-header{
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+}
+.employees{
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.employees-ca {
+    flex-basis: calc((100%-72px)/4);
+}
+.employees-card {
+    flex-basis: calc((100%-48px)/3);
+}
+.employees-section{
+background-color: var(--fill-text-color);
+}
+.employees-card-content-wraper{
+ border: 1px solid #ccc;   
+ border-top: none;
+padding-top: 32px;
+padding-bottom: 32px;
+width:264px;
+}
+.employees-card-content-wra {
+    border: 1px solid #ccc;
+    border-top: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 360px;
+}
+.employees-photo{
+
+}
+.section{
+padding-top: 120px;
+padding-bottom: 120px;
+}
+.but{
+    display: flex;
+    margin-bottom: 72px;
+}
+.footer-indent{
+ padding-top: 101.5px; 
+ padding-bottom: 100px;  
+}
+.first-section{
+    display: flex;
+    margin-right: 24px;
+}
+.block-indent{
+    padding-top: 120px;
+
 }
 /*-----------------HEADER----------------------------*/
 .menu-link {
@@ -40,6 +139,7 @@ color:var(--contact-color);
     letter-spacing: 0.02em;
     color: var(--contact-color);
     font-style: normal;
+   margin-right: 40px;
 }
 
 .contact-phone-number:hover,
@@ -64,6 +164,7 @@ color:var(--contact-color);
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--fill-text-color);
+        margin-top: 17.5px;
 }
 /*-----------------/HERO----------------------------*/
 
@@ -77,6 +178,8 @@ color:var(--contact-color);
     color:var(--button-font-color);
     background-color: var(--color-different-style);
     cursor: pointer;
+    border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .modal-btn:hover,
@@ -99,6 +202,7 @@ color:var(--contact-color);
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color:var(--subtitle-color);
+    margin-bottom: 72px;
 }
 .the-third-title{
         font-weight: 500;
@@ -106,6 +210,7 @@ color:var(--contact-color);
         line-height: 1.2;
         letter-spacing: 0.02em;
         color:var(--subtitle-color);
+        margin-bottom: 8px;
 }
 .button-color-first{
 color: var(--button-font-color);
@@ -119,6 +224,8 @@ background-color:var(--accent-color);
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--color-different-style);
+        margin-right: 76px;
+        
 }
 .logo-style{
     color: var(--subtitle-color);
@@ -141,6 +248,9 @@ background-color:var(--accent-color);
     font-style: normal;
 }
 .two-buttons{
+    padding: 12px 24px;
+    border: 1px solid #E7E9FC;
+        border-radius: 4px;
     font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -150,6 +260,7 @@ background-color:var(--accent-color);
         color:var(--color-different-style);
         cursor: pointer;
         background-color: var(--fill-text-color);
+        margin-right: 24px;
 }
 .two-buttons:hover,
 .two-buttons:focus{
