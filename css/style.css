@@ -113,6 +113,9 @@ width: 264px;
 padding-top: 120px;
 padding-bottom: 120px;
 }
+.sectionwhat{
+padding-bottom: 120px;
+}
 .but{
     display: flex;
     justify-content: center;
@@ -152,8 +155,10 @@ flex-basis: calc((100%-72px)/4);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--contact-color);
-    font-style: normal;
-   margin-right: 40px;
+    font-style: normal;   
+}
+.livsd{
+margin-right: 40px;
 }
 
 .contact-phone-number:hover,
