@@ -57,7 +57,7 @@ color:var(--contact-color);
     align-items: center;
 
 }
-.page-header{
+.page-head{
         border-bottom: 1px solid var(--cont-col);
 }
 .menu{
@@ -71,8 +71,8 @@ color:var(--contact-color);
     margin-right: 40px;
 }
 .page-header{
-    padding-top: 25.5px;
-    padding-bottom: 25.5px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .employees{
     display: flex; 
@@ -125,7 +125,10 @@ padding-bottom: 120px;
     gap: 24px;
 }
 .sect{
-    padding-top: 0;
+    padding-top: 96px;
+}
+.licalc{
+flex-basis: calc((100%-72px)/4);
 }
 
 
@@ -166,8 +169,7 @@ padding-bottom: 120px;
     letter-spacing: 0.02em;
     color: var(--button-font-color);
     margin-bottom: 64px;
-    max-width: 515px;
-    display: block;
+    max-width: 496px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -182,8 +184,10 @@ color:var(--contact-color);
         letter-spacing: 0.02em;
         color: var(--fill-text-color);
         margin-top: 17.5px;
-        max-width: 264px;
 
+}
+.futerblok{
+    max-width: 264px;
 }
 /*-----------------/HERO----------------------------*/
 
@@ -193,7 +197,7 @@ color:var(--contact-color);
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    min-width: 200px;
+    min-width: 169px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     border: none;
@@ -258,7 +262,8 @@ color:var(--contact-color);
     color:var(--fill-text-color);
 }
 .hero{
-    padding: 188px 0;
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-color: var(--subtitle-color);
 }
 .footer-style{
